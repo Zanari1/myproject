@@ -2,7 +2,7 @@ package HM;
 
 import java.util.Scanner;
 
-public class Task5 {
+public class ConvertingInches {
     public static void main(String[] args) {
 
         //Дюймы в метрах (вводные данные (один дюйм равен 0,0254 метра)).

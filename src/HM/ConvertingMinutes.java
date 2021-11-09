@@ -2,7 +2,7 @@ package HM;
 
 import java.util.Scanner;
 
-public class Task4 {
+public class ConvertingMinutes {
     public static void main(String[] args) {
 
         //Программа для преобразования минут в число лет и дней.
