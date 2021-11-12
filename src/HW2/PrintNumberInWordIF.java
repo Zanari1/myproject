@@ -4,7 +4,7 @@ public class PrintNumberInWordIF {
     public static void main(String[] args) {
 
         Scanner Numb = new Scanner(System.in);
-        System.out.println("Число");
+        System.out.println("Введите число");
         int number = Numb.nextInt();
         if (number == 1) {
             System.out.println("One");
