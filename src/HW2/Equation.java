@@ -8,18 +8,20 @@ public class Equation {
         double a = takeDoubleFromScanner();
         System.out.print("Введите значение b : ");
         double b = takeDoubleFromScanner();
-            if (b == 0 | a == 0) {
-            System.out.println("x = 0");
-        }
-        else{
-            System.out.println("x = "+ -b/a);
-        }
+        countEquation(a, b);
     }
     public static Double takeDoubleFromScanner(){
         Scanner input = new Scanner(System.in);
         return input.nextDouble();
     }
-
+    public static void countEquation(double double1, double double2 ) {
+        if (double2 == 0 | double1 == 0) {
+            System.out.println("x = 0");
+        }
+        else{
+            System.out.println("x = "+ -double2/double1);
+        }
+       }
     }
 
 //        5.Написать программу, которая бы решала уравнение вида a * x + b = 0

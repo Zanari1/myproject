@@ -9,7 +9,6 @@ public class PrintNumberInWordIF {
         int number = takeIntFromScanner();
         condition(number);
     }
-
     public static void condition(int number) {
         if (number == 1) {
             System.out.println("One");
