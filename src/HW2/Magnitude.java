@@ -3,18 +3,22 @@ import java.util.Scanner;
 public class Magnitude {
     public static void main(String[] args) {
 
-        Scanner Numb1 = new Scanner(System.in);
+
         System.out.println("Введите первое число");
-        int number1 = Numb1.nextInt();
-        Scanner Numb2 = new Scanner(System.in);
+        int number1 = takeIntFromScanner();
         System.out.println("Введите второе число");
-        int number2 = Numb2.nextInt();
-        if(Math.abs(number1) > Math.abs(number2)){
-            System.out.println("The " +  number1 + " has the greatest magnitude");
-        }else {
+        int number2 = takeIntFromScanner();
+        if (Math.abs(number1) > Math.abs(number2)) {
+            System.out.println("The " + number1 + " has the greatest magnitude");
+        } else {
             System.out.println("The " + number2 + " has the greatest magnitude");
         }
 
+    }
+
+    public static Integer takeIntFromScanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextInt();
     }
 }
 //      6.Написать программу которая будет сравнивать величину

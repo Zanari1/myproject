@@ -1,21 +1,20 @@
 package HW3;
 
+import java.security.PublicKey;
+
 public class ReverseOrder {
     public static void main(String[] args) {
 
 
-        String[] arr = new String[]{"one", "two", "three", "four"};
-        int len = arr.length;
+        String[] arrstring = new String[]{"one", "two", "three", "four"};
+        int len = arrlengString(arrstring);
         int[] arrint = new int[]{1, 2, 3, 4, 5};
-        int lenint = arrint.length;
+        int lenint = arrlengInt(arrint);
+        reversString(len,arrstring);
+        reversInt(lenint,arrint);
 
-        System.out.println("В обратном порядке стрингу");
-        while (len > 0){
-            System.out.println(arr[len - 1]);
-            len--;
-        }
-        System.out.println("");
-
+    }
+    public static void reversInt(int lenint, int[] arrint) {
         System.out.println("В обратном порядке интовые значения");
         while (lenint > 0){
             System.out.println(arrint[lenint - 1]);
@@ -23,6 +22,22 @@ public class ReverseOrder {
         }
         System.out.println("");
 
+    }
+    public static void reversString(int len, String[] arr){
+        System.out.println("В обратном порядке стрингу");
+        while (len > 0){
+            System.out.println(arr[len - 1]);
+            len--;
+        }
+        System.out.println("");
+    }
+    public static int arrlengString (String[] array) {
+        int dlina = array.length;
+        return dlina;
+    }
+    public static int arrlengInt (int[] array) {
+        int dlinaInt = array.length;
+        return dlinaInt;
     }
 }
 

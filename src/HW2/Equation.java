@@ -3,18 +3,21 @@ import java.util.Scanner;
 public class Equation {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Введите значени a : ");
-        double a = input.nextDouble();
-        System.out.print("Введите значение b : ");
-        double b = input.nextDouble();
 
-        if (b == 0 | a == 0) {
+        System.out.print("Введите значени a : ");
+        double a = takeDoubleFromScanner();
+        System.out.print("Введите значение b : ");
+        double b = takeDoubleFromScanner();
+            if (b == 0 | a == 0) {
             System.out.println("x = 0");
         }
         else{
             System.out.println("x = "+ -b/a);
         }
+    }
+    public static Double takeDoubleFromScanner(){
+        Scanner input = new Scanner(System.in);
+        return input.nextDouble();
     }
 
     }
