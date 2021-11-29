@@ -4,7 +4,9 @@ public class MinToMax {
     public static void main(String[] args) {
 
         int[] mas = {11, 3, 14, 16, 7, 76, 5};
-
+        maxValueCount(mas);
+    }
+    public static void maxValueCount (int[] mas){
         int count;
         do {
             count = 0;
@@ -22,6 +24,7 @@ public class MinToMax {
         for (int i = 0; i < mas.length; i++) {
             System.out.println(mas[i]);
         }
+
     }
 }
 

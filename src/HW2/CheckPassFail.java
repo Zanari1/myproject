@@ -5,16 +5,23 @@ public class CheckPassFail {
 
 
 
-        Scanner Numb = new Scanner(System.in);
+
         System.out.println("Введите число");
-        int mark = Numb.nextInt();
-                if( mark >= 50 ){
-                    System.out.println("Pass");
-                }else{
-                    System.out.println("Fail");
-                }
-        System.out.println("Done");
+        int mark = takeIntFromScanner();
+        CheckPass(mark);
             }
+    public static Integer takeIntFromScanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextInt();
+    }
+    public static void CheckPass(int someint) {
+        if( someint >= 50 ){
+            System.out.println("Pass");
+        }else{
+            System.out.println("Fail");
+        }
+        System.out.println("Done");
+    }
         }
 
 

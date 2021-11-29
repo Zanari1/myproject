@@ -5,17 +5,22 @@ public class ReversibleString {
 
 
         char[] arr = new char[]{'J', 'A', 'V', 'A'};
-        int len = arr.length;
+        int len = arrleng(arr);
+        takeCharFromArr(len, arr);
+    }
 
-        while (len > 0){
+    public static Integer arrleng(char[] array) {
+        int dlina = array.length;
+        return dlina;
+    }
+    public static void takeCharFromArr(int len, char[] arr) {
+        while (len > 0) {
             System.out.println(arr[len - 1]);
             len--;
         }
         System.out.println("");
-
-
-
     }
+
 
 }
 

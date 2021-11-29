@@ -1,11 +1,15 @@
 package HW2;
 import java.util.Scanner;
 public class PrintNumberInWordIF {
-    public static void main(String[] args) {
 
-        Scanner Numb = new Scanner(System.in);
+
+
+    public static void main(String[] args) {
         System.out.println("Введите число");
-        int number = Numb.nextInt();
+        int number = takeIntFromScanner();
+        condition(number);
+    }
+    public static void condition(int number) {
         if (number == 1) {
             System.out.println("One");
         } if (number == 2) {
@@ -27,6 +31,10 @@ public class PrintNumberInWordIF {
         }else {
             System.out.println("Other");
         }
+    }
+    public static Integer takeIntFromScanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextInt();
     }
 }
 

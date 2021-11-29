@@ -1,15 +1,24 @@
 package HW2;
 import java.util.Scanner;
 public class Discount {
+
     public static void main(String[] args) {
-
-
-        Scanner input = new Scanner(System.in);
         System.out.print("Введите сумму покупки : ");
-        double a = input.nextDouble();
+        double a = takeDoubleFromScanner() ;
+        printResult(a);
+    }
 
+    public static Double CymmaPokypki(Double i) {
+        return (i - (i * 15) /100);
+    }
+    public static Double takeDoubleFromScanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextDouble();
+    }
+
+    public static void printResult(double a) {
         if ( a > 1000) {
-            System.out.println( "Сумма вашей покупки со скидкой = "+  (a - (a * 15) /100) + "$");
+            System.out.println( "Сумма вашей покупки со скидкой = "+  CymmaPokypki(a) + "$");
         }
         else{
             System.out.println("Сумма вашей покупки = "+ a + "$ скидка предоставляется на сумму покупки более 1000$");

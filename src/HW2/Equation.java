@@ -3,20 +3,25 @@ import java.util.Scanner;
 public class Equation {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Введите значени a : ");
-        double a = input.nextDouble();
-        System.out.print("Введите значение b : ");
-        double b = input.nextDouble();
 
-        if (b == 0 | a == 0) {
+        System.out.print("Введите значени a : ");
+        double a = takeDoubleFromScanner();
+        System.out.print("Введите значение b : ");
+        double b = takeDoubleFromScanner();
+        countEquation(a, b);
+    }
+    public static Double takeDoubleFromScanner(){
+        Scanner input = new Scanner(System.in);
+        return input.nextDouble();
+    }
+    public static void countEquation(double double1, double double2 ) {
+        if (double2 == 0 | double1 == 0) {
             System.out.println("x = 0");
         }
         else{
-            System.out.println("x = "+ -b/a);
+            System.out.println("x = "+ -double2/double1);
         }
-    }
-
+       }
     }
 
 //        5.Написать программу, которая бы решала уравнение вида a * x + b = 0

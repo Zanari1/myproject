@@ -4,10 +4,17 @@ public class CheckOddEven {
     public static void main(String[] args) {
 
 
-        Scanner numb = new Scanner(System.in);
+
         System.out.println("Введите число");
-        int number = numb.nextInt();
-        if (number % 2 != 0) {
+        int number = takeIntFromScanner();
+        oddOrEven(number);
+    }
+    public static Integer takeIntFromScanner() {
+        Scanner input = new Scanner(System.in);
+        return input.nextInt();
+    }
+    public static void oddOrEven(int someInt) {
+        if (someInt % 2 != 0) {
             System.out.println("Odd Number");
         } else {
             System.out.println("Even Number");

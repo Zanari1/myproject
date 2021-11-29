@@ -6,13 +6,19 @@ public class MinValue {
     public static void main(String[] args) {
         int[] arr = {2, 121, 9, 43};
         int minValue = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < minValue) {
-                minValue = arr[i];
+        findMinValue(minValue, arr);
+    }
+    public static void findMinValue(int minVaalue, int[] arrInt){
+        for (int i = 1; i < arrInt.length; i++) {
+            if (arrInt[i] < minVaalue) {
+                minVaalue = arrInt[i];
 
             }
         }
-        System.out.println(minValue);
+        System.out.println(minVaalue);
+
+
+
     }
 }
 
