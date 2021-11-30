@@ -1,6 +1,6 @@
 package HW6;
 
-public class watch {
+public class Watch {
     public int cost;
     public String brand;
     public String color;

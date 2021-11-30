@@ -1,8 +1,8 @@
 package HW6;
 
-public class someWatch {
+public class SomeWatch {
     public static void main(String[] args) {
-        watch royal = new watch();
+        Watch royal = new Watch();
         royal.cost = 172;
         royal.color = "bleu";
         royal.brand = "Royal london";

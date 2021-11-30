@@ -1,18 +1,18 @@
 package HW6;
 
-public class phone {
+public class Phone {
     private String os = "ios";
     private String cost;
     private int model;
     private String color;
 
-    public phone(String cost, String color, int model) {
+    public Phone(String cost, String color, int model) {
         this.cost = cost;
         this.color = color;
         this.model = model;
     }
 
-    public phone(String os, String cost, String color, int model) {
+    public Phone(String os, String cost, String color, int model) {
         this.cost = cost;
         this.color = color;
         this.model = model;

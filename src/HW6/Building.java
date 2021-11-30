@@ -1,6 +1,6 @@
 package HW6;
 
-public class building {
+public class Building {
     public int id;
     public int floors;
     public int room;
