@@ -4,8 +4,6 @@ public class CheckPassFail {
     public static void main(String[] args) {
 
 
-
-
         System.out.println("Введите число");
         int mark = takeIntFromScanner();
         CheckPass(mark);
